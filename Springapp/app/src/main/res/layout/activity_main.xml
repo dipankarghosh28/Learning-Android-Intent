@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/dialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="318dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="145dp"
+        android:text="DIAL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toastButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="318dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="145dp"
+        android:text="TOAST"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dialButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="214dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="249dp"
+        android:text="SHOW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ShowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="207dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="63dp"
+        android:text="ShowPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LocationButton"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton" />
+
+    <Button
+        android:id="@+id/ViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="214dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:text="VIEW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/LocationButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toastButton" />
+
+    <Button
+        android:id="@+id/DisplayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="11dp"
+        android:text="DISPLAY"
+        app:layout_constraintBottom_toTopOf="@+id/LocationButton"
+        app:layout_constraintEnd_toStartOf="@+id/dialButton"
+        app:layout_constraintStart_toEndOf="@+id/toastButton" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="129dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="97dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="26dp"
+        android:checked="false"
+        android:text="LEARNING INTENT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/dialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
